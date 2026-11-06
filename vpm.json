@@ -1,0 +1,49 @@
+{
+  "name": "FTForge",
+  "id": "com.ftforge.vpm",
+  "url": "https://fkaoi.github.io/ftforge-vpm/vpm.json",
+  "author": "FTForge",
+  "packages": {
+    "com.ftforge.core": {
+      "versions": {
+        "0.1.0": {
+          "name": "com.ftforge.core",
+          "displayName": "FTForge",
+          "version": "0.1.0",
+          "unity": "2022.3",
+          "description": "Applies FTForge face tracking data at build time: adds the generated blendshapes to mesh copies and configures VRChat native Face Tracking (Unified Expressions). Needed by avatars that use FTForge data.",
+          "author": {
+            "name": "FTForge"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.10.6",
+            "nadena.dev.ndmf": ">=1.14.0"
+          },
+          "url": "https://fkaoi.github.io/ftforge-vpm/com.ftforge.core-0.1.0.zip",
+          "zipSHA256": "7a6dbd52cfca7225ccd271dbbb7c1d5c6ceff9c688572a0de88fd7afadbdb3f0"
+        }
+      }
+    },
+    "com.ftforge.authoring": {
+      "versions": {
+        "0.1.0": {
+          "name": "com.ftforge.authoring",
+          "displayName": "FTForge Authoring",
+          "version": "0.1.0",
+          "unity": "2022.3",
+          "description": "Creator tools for FTForge: analyse an avatar, generate missing Unified Expressions blendshapes (Blender), capture and score them, and export face tracking data packages. Not needed by end users.",
+          "author": {
+            "name": "FTForge"
+          },
+          "vpmDependencies": {
+            "com.ftforge.core": "0.1.0",
+            "com.vrchat.avatars": ">=3.10.6",
+            "nadena.dev.ndmf": ">=1.14.0"
+          },
+          "url": "https://fkaoi.github.io/ftforge-vpm/com.ftforge.authoring-0.1.0.zip",
+          "zipSHA256": "1ad87f88fe507054c121a510145db280a878181c9107ce950f83448a45388b93"
+        }
+      }
+    }
+  }
+}
